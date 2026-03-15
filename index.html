@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Consulta CNPJ - 14.066.270/0001-00</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f4f4f4;
+margin:0;
+}
+
+header{
+background:#0b3d91;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.menu{
+background:#222;
+padding:10px;
+text-align:center;
+}
+
+.menu button{
+margin:5px;
+padding:10px 20px;
+border:none;
+background:#0b3d91;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+.menu button:hover{
+background:#06265c;
+}
+
+.section{
+display:none;
+padding:20px;
+background:white;
+margin:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.active{
+display:block;
+}
+
+</style>
+
+<script>
+
+function abrir(secao){
+
+var s = document.querySelectorAll(".section");
+
+s.forEach(function(el){
+el.classList.remove("active");
+});
+
+document.getElementById(secao).classList.add("active");
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>Consulta de Empresa</h1>
+<h2>CNPJ: 14.066.270/0001-00</h2>
+</header>
+
+<div class="menu">
+
+<button onclick="abrir('empresa')">Empresa</button>
+<button onclick="abrir('endereco')">Endereço</button>
+<button onclick="abrir('contato')">Contato</button>
+<button onclick="abrir('atividades')">Atividades</button>
+<button onclick="abrir('socios')">Sócios</button>
+<button onclick="abrir('dados')">Dados Cadastrais</button>
+
+</div>
+
+<div id="empresa" class="section active">
+
+<h2>Informações da Empresa</h2>
+
+<p><b>Razão Social:</b> ASSOCIACAO DAS EMPRESAS DO GRUPO GMAD</p>
+<p><b>Nome Fantasia:</b> ASSOCIACAO DAS EMPRESAS DO GRUPO GMAD</p>
+<p><b>CNPJ:</b> 14.066.270/0001-00</p>
+<p><b>Tipo:</b> MATRIZ</p>
+<p><b>Natureza Jurídica:</b> Associação Privada</p>
+<p><b>Porte:</b> Demais</p>
+<p><b>Capital Social:</b> R$ 0,00</p>
+
+</div>
+
+<div id="endereco" class="section">
+
+<h2>Endereço</h2>
+
+<p><b>Logradouro:</b> Avenida Gal Carlos Cavalcanti</p>
+<p><b>Número:</b> 585</p>
+<p><b>Complemento:</b> Sala 03</p>
+<p><b>Bairro:</b> Uvaranas</p>
+<p><b>Cidade:</b> Ponta Grossa</p>
+<p><b>Estado:</b> Paraná</p>
+<p><b>CEP:</b> 84025-000</p>
+
+</div>
+
+<div id="contato" class="section">
+
+<h2>Contato</h2>
+
+<p><b>Telefone 1:</b> (42) 2102-7400</p>
+<p><b>Telefone 2:</b> (42) 2101-6600</p>
+<p><b>Email:</b> claudecir@czepula.com.br</p>
+
+</div>
+
+<div id="atividades" class="section">
+
+<h2>Atividades Econômicas</h2>
+
+<p><b>CNAE Principal:</b></p>
+<p>94.11-1-00 - Atividades de organizações associativas patronais e empresariais</p>
+
+<br>
+
+<p><b>CNAE Secundário:</b></p>
+<p>94.99-5-00 - Atividades associativas não especificadas anteriormente</p>
+
+</div>
+
+<div id="socios" class="section">
+
+<h2>Quadro de Sócios</h2>
+
+<p><b>José Álvaro Góes Filho</b></p>
+<p>Cargo: Presidente</p>
+<p>Entrada: 27/07/2011</p>
+
+<br>
+
+<p><b>Ivar Casagrande</b></p>
+<p>Cargo: Diretor</p>
+<p>Entrada: 27/07/2011</p>
+
+</div>
+
+<div id="dados" class="section">
+
+<h2>Dados Cadastrais</h2>
+
+<p><b>Situação:</b> Ativa</p>
+<p><b>Data de Abertura:</b> 27/07/2011</p>
+<p><b>Data da Situação Cadastral:</b> 27/07/2011</p>
+<p><b>MEI:</b> Não</p>
+<p><b>Simples Nacional:</b> Não</p>
+
+</div>
+
+</body>
+</html>
